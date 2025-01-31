@@ -1,0 +1,26 @@
+# i3 config example
+
+# Set the mod key (Mod4 is the Super key)
+set $mod Mod4
+
+# Keybindings
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+d exec dmenu_run
+bindsym $mod+Shift+q kill
+
+# Set background color for the bar
+bar {
+  status_command i3status
+  colors {
+    background #000000
+    statusline #ffffff
+  }
+}
+
+# Workspaces
+workspace 1 output HDMI-1
+workspace 2 output HDMI-2
+
+#exec --no-startup-id xsetroot -solid "#2E3440"
+exec --no-startup-id feh --bg-scale ${./wallpapers/wallpaper1.png}
+
