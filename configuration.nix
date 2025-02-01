@@ -133,7 +133,7 @@ in
   
   system.activationScripts.copyConfigs.text = ''
     mkdir -p /home/tom/.config
-    cp -r ${programsDir}/* /home/tom/.config/
+    cp -rf ${programsDir}/* /home/tom/.config/
     chown -R tom:users /home/tom/.config
   '';
 
