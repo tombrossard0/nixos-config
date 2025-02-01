@@ -108,6 +108,7 @@ in
      firefox
      zsh
      kitty
+     git
   ];
   
   environment.etc."kitty/kitty.conf".source = ./programs/kitty/kitty.conf;
