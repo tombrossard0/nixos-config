@@ -109,6 +109,7 @@ in
      zsh
      kitty
      git
+     feh
   ];
   
   environment.etc."kitty/kitty.conf".source = ./programs/kitty/kitty.conf;

@@ -64,6 +64,10 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# move tiling windows via drag & drop by left-clicking into the title bar,
+# or left-clicking anywhere into the window while holding the floating modifier.
+tiling_drag modifier titlebar
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
@@ -152,3 +156,9 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# configure gaps
+gaps inner 10px
+
+# set background
+exec --no-startup-id feh --no-fehbg --bg-fill /home/tom/.config/i3/wallpapers/wallpaper1.png
